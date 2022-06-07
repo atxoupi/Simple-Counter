@@ -7,7 +7,7 @@ import SecondsCounter from "./SecondsCounter.jsx";
 
 const Home = ({ tiempo, t2, t3, t4 }) => {
 	return (
-		<div>
+		<div className="container m-auto">
 			<SecondsCounter segundos={tiempo} s2={t2} s3={t3} s4={t4} />
 		</div>
 	);

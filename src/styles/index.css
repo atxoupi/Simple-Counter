@@ -10,3 +10,6 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body{
+    background-image: url("https://laboratoriodeperiodismo.org/wp-content/uploads/2019/01/muro-de-pago.jpg");
+}
