@@ -1,6 +1,6 @@
 import React from "react";
 
-const SecondsCounter = ({ segundos, s2, s3, s4 }) => {
+const SecondsCounter = ({ segundos }) => {
 	//segundos++;
 	//console.log(segundos);
 	return (
@@ -19,25 +19,25 @@ const SecondsCounter = ({ segundos, s2, s3, s4 }) => {
 				<div
 					className="bg-secondary fs-1 text shadow-lg p-3 m-2 mb-5 rounded text-center"
 					style={{ width: "40px" }}>
-					{s4}
+					{segundos[3]}
 				</div>
 
 				<div
 					className="bg-secondary fs-1 text shadow-lg p-3 m-2 mb-5 rounded text-center"
 					style={{ width: "40px" }}>
-					{s3}
+					{segundos[2]}
 				</div>
 
 				<div
 					className="bg-secondary fs-1 text shadow-lg p-3 m-2 mb-5 rounded text-center"
 					style={{ width: "40px" }}>
-					{s2}
+					{segundos[1]}
 				</div>
 
 				<div
 					className="bg-secondary fs-1 text shadow-lg p-3 m-2 mb-5 rounded text-center"
 					style={{ width: "40px" }}>
-					{segundos}
+					{segundos[0]}
 				</div>
 			</div>
 		</>

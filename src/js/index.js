@@ -20,29 +20,25 @@ function imprimir(segundos) {
 	ReactDOM.render(<Home tiempo={segundos} />, document.querySelector("#app"));
 	//segs++;
 }*/
-let num = 0;
-let num1 = 0;
-let num2 = 0;
-let num3 = 0;
+
+let arr = [0, 0, 0, 0];
+//tiempo={num} t2={num1} t3={num2} t4={num3}
 setInterval(function () {
-	ReactDOM.render(
-		<Home tiempo={num} t2={num1} t3={num2} t4={num3} />,
-		document.querySelector("#app")
-	);
-	if (num === 9) {
-		num = 0;
-		num1++;
-		if (num1 === 9) {
-			num1 = 0;
-			num2++;
-			if (num2 === 9) {
-				num2 = 0;
-				num3++;
-				if (num3 === 9) {
-					num3 = 0;
-					num++;
+	ReactDOM.render(<Home tiempo={arr} />, document.querySelector("#app"));
+	if (arr[0] === 9) {
+		arr[0] = 0;
+		arr[1]++;
+		if (arr[1] === 9) {
+			arr[1] = 0;
+			arr[2]++;
+			if (arr[2] === 9) {
+				arr[2] = 0;
+				arr[3]++;
+				if (arr[3] === 9) {
+					arr[3] = 0;
+					arr[0]++;
 				}
 			}
 		}
-	} else num++;
+	} else arr[0]++;
 }, 1000);

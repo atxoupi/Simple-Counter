@@ -5,10 +5,10 @@ import SecondsCounter from "./SecondsCounter.jsx";
 
 //create your first component
 
-const Home = ({ tiempo, t2, t3, t4 }) => {
+const Home = ({ tiempo }) => {
 	return (
 		<div className="container m-auto">
-			<SecondsCounter segundos={tiempo} s2={t2} s3={t3} s4={t4} />
+			<SecondsCounter segundos={tiempo} />
 		</div>
 	);
 };
